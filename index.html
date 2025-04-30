@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitLife360 - Health Risk Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Premium CSS Enhancements */
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      animation: fadeIn 0.8s ease-out;
+    }
+    h1 {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      letter-spacing: -0.025em;
+      background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-white {
+      background: white;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      transition: all 0.3s ease;
+    }
+    .bg-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    th {
+      background: linear-gradient(to right, #60a5fa, #3b82f6);
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+    img {
+      border: 1px solid #e2e8f0;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.01);
+    }
+    a {
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      color: #1e40af;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .rounded-xl {
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-6">FitLife360 Health Risk Prediction</h1>
+    
+    <p class="text-lg text-center mb-6">
+      This web application predicts individual health risks based on biometric and lifestyle data. I personally developed the machine learning pipeline, Flask backend, and frontend dashboard with Plotly and Tailwind CSS. All code, data preprocessing, model evaluation, and UI were handled by me.
+    </p>
+
+    <!-- Sprint Summary -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-500">📅 Sprint Summary Table</h2>
+      <table class="min-w-full table-auto text-left">
+        <thead>
+          <tr class="bg-blue-100">
+            <th class="px-4 py-2">Sprint</th>
+            <th class="px-4 py-2">Objective</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="px-4 py-2">1</td>
+            <td class="px-4 py-2">Data cleanup, BMI computation, preprocessing</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">2</td>
+            <td class="px-4 py-2">Trained ML models (RF, LR, GB)</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">3</td>
+            <td class="px-4 py-2">Built Flask API routes and predictors</td>
+          </tr>
+          <tr class="border-b">
+            <td class="px-4 py-2">4</td>
+            <td class="px-4 py-2">Dashboard + charts using Plotly</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">5</td>
+            <td class="px-4 py-2">Feedback engine & health insights</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- User Stories -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-500">📌 User Stories & Tasks</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>As a user, I want to enter my health data and receive a risk assessment.</li>
+        <li>As a user, I want personalized suggestions to improve health risk factors.</li>
+        <li>As the developer, I built the entire backend logic, ML integration, and UI workflow.</li>
+        <li>Tasks not done by me (none for this project) would be listed clearly here.</li>
+      </ul>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-500">📊 Dashboard View</h2>
+      <img src="images/dashboard.png" alt="Dashboard Screenshot" class="w-full rounded shadow">
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-500">🧠 Prediction Form</h2>
+      <img src="images/form.png" alt="Prediction Form Screenshot" class="w-full rounded shadow">
+    </div>
+
+    <!-- Code & Commits -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-blue-500">🧾 Contribution Evidence</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Public repo: <a href="https://github.com/Sowmyaakula1/Health_Predictor" class="text-blue-500 underline">GitHub Repository</a></li>
+        <li>All code authored and committed by me. Full commit history is traceable.</li>
+        <li>Screenshots above reflect functional portions I implemented personally.</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-10">
+      <a href="https://github.com/Sowmyaakula1/Health_Predictor" class="text-blue-500 underline">🔗 View Full Source on GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
