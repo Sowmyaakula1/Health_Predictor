@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife360 Health Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8 text-center text-blue-600">FitLife360 Health Analytics Dashboard</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-500">BMI vs Average Heart Rate</h2>
+            {{ bmi_chart|safe }}
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-500">Sleep Patterns by Health Condition</h2>
+            {{ sleep_chart|safe }}
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Feature Importance</h2>
+        {{ importance_chart|safe }}
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+        <h2 class="text-2xl font-semibold mb-4 text-blue-500">Disease Risk Factors and Mitigations</h2>
+        <p class="text-lg mb-4">Here are some common disease risk factors and mitigation strategies:</p>
+        <ul class="list-disc list-inside">
+            <li class="mb-2"><strong>High BMI:</strong> Increase physical activity and maintain a balanced diet.</li>
+            <li class="mb-2"><strong>High Stress Levels:</strong> Practice mindfulness and relaxation techniques.</li>
+            <li class="mb-2"><strong>Low Sleep Duration:</strong> Aim for 7-9 hours of sleep per night.</li>
+            <li class="mb-2"><strong>Smoking:</strong> Seek support to quit smoking.</li>
+        </ul>
+    </div>
+
+    <div class="text-center mt-8">
+        <a href="/" class="text-blue-500 hover:text-blue-600">Back to Home</a>
+    </div>
+</div>
+
+<script>
+// JavaScript for handling any additional interactivity can be added here if needed
+</script>
+
+</body>
+</html>
