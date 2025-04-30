@@ -46,7 +46,7 @@ Developed the entire system, including:
 ---
 
 ### Code Repository
-GitHub: [https://github.com/Sowmyaakula1/Health_Risk_Predictor](https://github.com/Sowmyaakula1/Health_Risk_Predictor)
+GitHub: [https://github.com/Sowmyaakula1/Health_Risk_Predictor](https://github.com/Sowmyaakula1/Health_Predictor.git)
 
 ### Commit History
 All code commits under [@Sowmyaakula1](https://github.com/Sowmyaakula1)
